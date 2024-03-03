@@ -1,0 +1,130 @@
+
+main{
+    width: 100%;
+    height: auto;
+ 
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+@font-face {
+    font-family: roberto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+*{
+     font-family: roberto; 
+     font-weight: 700;
+}
+
+main .img1>div,
+main .img2>div{
+    &:nth-of-type(1){
+        background-color:#6995FF ;
+    }
+    &:nth-of-type(2){
+        background-color:#FFDF8E ;
+    }
+    &:nth-of-type(3){
+        background-color:#9DE3D3 ;
+    }
+    &:nth-of-type(4){
+        background-color:#FF555A ;
+    }
+}
+
+main .vid1 {   
+    position: relative;
+    overflow: hidden; 
+    &::after{
+        content: '';
+        display: flex;       
+        background:rgba(0, 0, 0, 0.269);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }       
+    >video {          
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        bottom: 0;
+        left: 0;
+    }   
+}
+
+.listMenu{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.rotate{
+    animation:para1 0.5s linear ;
+    rotate: 0deg;
+}
+@keyframes para1  {
+    100%{rotate: 360deg}
+}
+
+.scope1{
+    position: relative; 
+ }
+.drapDown{   
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.5s;
+}
+
+ .drapDown2{
+    position: absolute;   
+    top:0%;
+    right: 0%;   
+    transition: all 0.5s;
+    z-index: 999;
+    width: 2px;
+    height: 100%;       
+}
+
+
+ .drapDown2Child{
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 100%;   
+    height: 100%;
+    z-index: 200;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &::after{
+        display: flex;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.84);
+        z-index: 201;
+    }
+    >figure{
+        >img{
+            width: 30%;
+            position: relative;
+            z-index: 203;
+        }
+    }
+    >ul{
+        position: relative;
+        z-index: 203;
+    }
+} 
