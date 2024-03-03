@@ -15,5 +15,5 @@
 
 - Role - Frontend
 
-- How to reach me : with my [instagram](https://www.instagram.com/) and [linkedin](https://www.linkedin.com/in/niloofar-yoosefikhorram-242742143)
+- How to reach me : with my [instagram](https://www.instagram.com/niloofar_yoosefiweb?igsh=MXc2NjRlYXV0MnNmMw==) and [linkedin](https://www.linkedin.com/in/niloofar-yoosefikhorram-242742143)
 
